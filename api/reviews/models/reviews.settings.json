@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "name": "Reviews"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "reviewer_name": {
+      "type": "string",
+      "required": true
+    },
+    "review": {
+      "type": "text",
+      "required": true
+    },
+    "product": {
+      "via": "reviews",
+      "model": "products"
+    }
+  }
+}

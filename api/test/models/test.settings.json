@@ -1,0 +1,16 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etst",
+  "info": {
+    "name": "test"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nama": {
+      "type": "string"
+    }
+  }
+}
